@@ -1,0 +1,59 @@
+<!DOCTYPE >
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>Home  </title>
+	<link href="css/style.css" type=text/css rel=stylesheet>
+</head>
+<body onLoad="rotatePhoto()">
+	<header>
+		<div class="box">
+			<ul>
+				<li>
+					<a href="index.html">
+						<b>高雄旅遊網</b>
+					</a>
+				</li>
+				<li>
+					<a href="jh.html">
+						活動
+					</a>
+				</li>
+				<li>
+					<a href="jd.html">
+						景點
+					</a>
+				</li>
+				<li>
+					<a href="jm.html">
+						食宿
+					</a>
+				</li>
+				<li>
+					<a href="jt.html">
+						交通
+					</a>
+				</li>
+				<li>
+					<a href="jb.html">
+						指南
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="banner">
+		<img src="images/banner.jpg" id="p" class="img">
+	</div>
+	<script type="text/javascript">
+var Num=0;
+function rotatePhoto()
+{
+if(++Num>2)
+Num=1;
+document.getElementById("p").src="images/banner"+Num+".jpg";
+window.setTimeout("rotatePhoto()", 3000);
+}
+</script>
+</body>
+</html>
